@@ -1,0 +1,1 @@
+﻿(Select-String -Path "C:\Users\still\Documents\CS380\server.log" -Pattern 'Error').Matches.Count
