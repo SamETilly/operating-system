@@ -40,7 +40,6 @@ int main(void){
 		gettimeofday(&end, NULL);
 		close(p1[0]);
 		close(p2[1]);
-		printf("%ld %ld %ld %ld\n", start.tv_sec, start.tv_usec, end.tv_sec, end.tv_usec);
 		double elapsed = (end.tv_sec - start.tv_sec) + (end.tv_usec - start.tv_usec) / 1000000.0;
 		double exchanges = n / elapsed;
 
